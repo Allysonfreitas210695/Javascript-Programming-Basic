@@ -1,16 +1,22 @@
 const nome = document.querySelectorAll("input")
-const vet = []
+const btn = document.querySelector('#submit')
 
-nome[3].addEventListener("click", () =>{
-    vet.push(nome[0].value)
-    vet.push(nome[1].value)
-    vet.push(nome[2].value)
-    let texto = document.querySelector('#texto').value
-    vet.push(texto)
+function getElementsValue(){
+    for(const element of nome){
+        if(element.type != 'button'){
+            console.log(element.value);
+        }
+    }
+}
 
-    vet.forEach((element) => {
-        console.log(element);
-    })
-})
+function preventDefault(event){
+    //pegar elementos do formulário 
+    getElementsValue()
+    //mensagem de enviou
+    console.log('Enviar Formulário');
+    event.preventDefault()
+}
+
+btn.addEventListener('click', preventDefault);
 
 

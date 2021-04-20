@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Formulario de contato</title>
+    <title>Formulário</title>
 </head>
 <body>
     <div class="container">
         <fieldset>
             <legend> Formulário </legend>
-            <form action="">
+            <form action="" required>
                 <label for="nome">Nome:</label>
                 <input type="text" name="name" id="nome" placeholder="digite seu nome..." maxlength="35" required>
                 
@@ -21,10 +21,10 @@
                 <label for="telefone">Telefone:</label>
                 <input type="tel" name="telefone" id="telefone" placeholder="digite seu telefone..." required>
                  
-                 <label for="texto">Messagem:</label>
-                <textarea name="texto" id="texto" cols="20" rows="5" placeholder="digite sua messagem...">teste</textarea>
+                 <label for="texto">Mensagem:</label>
+                <textarea name="texto" id="texto" cols="20" rows="5" placeholder="digite sua mensagem...">teste</textarea>
             </form>
-            <input type="button" value="Submit">
+            <input type="button" value="Submit" id="submit">
         </fieldset>
     </div>
     <script src="./script.js"></script>
